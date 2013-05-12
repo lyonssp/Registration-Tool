@@ -1,0 +1,4 @@
+STATUS REPORT
+
+	My program is completed and works within the expectation of error-checking and input specified.  The program could be improved upon, however.  More robust error-checking could be easily implemented so that a bad user input would not have as detrimental of an effect.  I also believe that my program could be more modular.  As it is right now, there are standalone functions that could be better implemented as class methods. Finally, the program is all a part of one file of code, rather than being separated appropriately into multiple files. 
+	Furthermore, the program is missing the interaction diagram, component diagram and Unit Integration and Test Results elements of its documentation.  The Specification and Design documents are completed and included.  

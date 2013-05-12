@@ -1,0 +1,65 @@
+Youth Soccer Registration Program
+Version 1
+
+SPECIFICATION
+
+
+A program that maintains a file of players in a youth soccer league.  The file containing the initial data is League.txt.  Each player is grouped with their birth year, age group and registration status in the file.  The program prompts the user to enter a command.  The options for these commands are to add a player, edit an existing player's info, lookup a specific player's info, display all players in an age group and save the updated league information to the file.  The user is prompted for a new command until they choose to save the updated information or exit the program.  The global variable current_year is read from a file called current_year.txt at the very start of the program.
+
+Typical session:
+
+(s)ave and quit   (a)dd new player to league   (g)enerate age group roster
+(e)dit player information (l)ookup a player
+command: a
+
+Please give the name of the player to add: John Doe
+Give the year of birth of the player you are registering: 1998
+Is this player's registration status paid or not paid?  paid
+Your player has been added to the system.
+
+The player's name, birth year and registration status are given and stored.  The player's age group is calculated from the global variable current_year and the given birth year.  Birth years are integers and adding players who are younger than 4 or older than 16 produces an error, prompting the user for a new command.
+
+
+(s)ave and quit   (a)dd new player to league   (g)enerate age group roster
+(e)dit player information (l)ookup a player
+command: l
+
+Player's name:  John Doe
+
+John Doe
+1998
+U17
+paid
+
+
+(s)ave and quit   (a)dd new player to league   (g)enerate age group roster
+(e)dit player information (l)ookup a player
+command: e
+
+Player who's info to edit:  John Doe
+Enter the player's name: John Deer
+Enter the player's birth year: 2005
+Is the player's status now paid or not paid? paid
+The player's information has been successfully edited!
+
+The program asks for the name of the player for whom the user would like to edit information.  The user is then asked to simply input all of the player's data again, excluding the category because this is calculated based on the birth year.
+
+
+(s)ave and quit   (a)dd new player to league   (g)enerate age group roster
+(e)dit player information (l)ookup a player
+command: g
+
+For which age group would you like to create a list of players? U17
+Name a file to which the list will be saved.  U17_league.txt
+Read the file to see the generated roster.
+
+The age group and output file are specified by the user and all the players in that category are written to the file along with their information.
+
+(s)ave and quit   (a)dd new player to league   (g)enerate age group roster
+(e)dit player information (l)ookup a player
+command: s
+
+The file that the program is designed to maintain is updated to contain the added and edited players and their information.
+
+
+
